@@ -31,3 +31,15 @@ Rinkimų naktį, kiekviena apylinkė gali registruoti suskaičiuotus balsus. Vis
 11.  Sistemos pateikiamus rinkimų rezultatus galima eksportuoti CSV formatu.
 12.  Sistema gali pateikti rinkimų rezultatus išorinėms sistemoms skirtu web servisu.
 13.  Sistemoje galima ieškoti kandidato ir peržiūrėti jo informaciją.
+
+##Nefunkciniai reikalavimai
+
+1.  Sistemos duomenys saugomi reliacinėje duomenų bazėje
+2.  Programinę įrangą galima paleisti naudojant Java taikomųjų programų serverį ar konteinerį.
+3.  Projekto sąranka valdoma Maven įrankiu.
+4.  Vartotojo sąsajai naudojamas React karkasas.
+5.  Programa kaupia detalų įvykių žurnalą (angl. log), leidžiantį operatoriui stebėti kas vyksta sistemoje. Įvykių žurnale slaptažodžiai nematomi.
+6.  Slaptažodžiai saugomi užkoduoti maišos funkcija.
+
+
+
