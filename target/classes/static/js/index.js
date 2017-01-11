@@ -14,8 +14,8 @@ var App = React.createClass({
         </div>
         <div id="navbar" className="navbar-collapse collapse">
           <ul className="nav navbar-nav">
-            <li className="active"><a href="#">Home</a></li>
-            <li><a href="#/about">About</a></li>
+            <li className="active"><a href="/login">Home</a></li>
+            <li><a href="#/login">Login</a></li>
             <li><a href="#/contact">Contact</a></li>
           </ul>
           <ul className="nav navbar-nav navbar-right">
@@ -39,12 +39,13 @@ var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
+var LoginComponent = window.LoginComponent;
 
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={NoMatch} />
-      <Route path="/create" component={NoMatch} />
+      <Route path="/login" component={LoginComponent} />
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>

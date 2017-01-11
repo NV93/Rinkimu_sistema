@@ -1,1 +1,6 @@
+lt\itakademija\users\UserAuthentification.class
 lt\itakademija\Application.class
+lt\itakademija\users\UsersRepository.class
+lt\itakademija\users\UsersEntity.class
+lt\itakademija\users\UsersService.class
+lt\itakademija\users\UsersController.class
