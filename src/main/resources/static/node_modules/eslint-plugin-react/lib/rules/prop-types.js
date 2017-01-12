@@ -586,7 +586,7 @@ module.exports = {
       }
 
       var component = components.get(utils.getParentComponent());
-      var usedPropTypes = (component && component.usedPropTypes || []).slice();
+      var usedPropTypes = component && component.usedPropTypes || [];
 
       switch (type) {
         case 'direct':

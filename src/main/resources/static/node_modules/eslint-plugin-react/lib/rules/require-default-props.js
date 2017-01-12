@@ -4,7 +4,6 @@
  */
 'use strict';
 
-var find = require('array.prototype.find');
 var Components = require('../util/Components');
 var variableUtil = require('../util/variable');
 var annotations = require('../util/annotations');
@@ -58,7 +57,7 @@ module.exports = {
      * @returns {ASTNode|null} Return null if the variable could not be found, ASTNode otherwise.
      */
     function findVariableByName(name) {
-      var variable = find(variableUtil.variablesInScope(context), function(item) {
+      var variable = variableUtil.variablesInScope(context).find(function(item) {
         return item.name === name;
       });
 
@@ -189,7 +188,7 @@ module.exports = {
      *                                     from this ObjectExpression can't be resolved.
      */
     function getDefaultPropsFromObjectExpression(objectExpression) {
-      var hasSpread = find(objectExpression.properties, function(property) {
+      var hasSpread = objectExpression.properties.find(function(property) {
         return property.type === 'ExperimentalSpreadProperty';
       });
 
