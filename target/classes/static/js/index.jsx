@@ -7,7 +7,6 @@ var App = React.createClass({
           <div className="container-fluid">
               <ul className="nav navbar-nav">
                 <li><a href="#/">Home<span className="sr-only">(current)</span></a></li>
-                <li><a href="#/create">Create Book<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/login">Login<span className="sr-only">(current)</span></a></li>
               </ul>
           </div>
