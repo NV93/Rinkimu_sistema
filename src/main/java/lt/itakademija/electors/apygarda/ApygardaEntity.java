@@ -1,13 +1,11 @@
 package lt.itakademija.electors.apygarda;
 
-import lt.itakademija.electors.ApylinkeEntity;
+import lt.itakademija.electors.apylinke.ApylinkeEntity;
 import lt.itakademija.electors.kandidatas.KandidatasEntity;
 import lt.itakademija.electors.partija.PartijaEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -18,11 +16,13 @@ public class ApygardaEntity {
 
     @Id
     @GeneratedValue
+    @Column(name = "APYGARDA_ID")
     private Long id;
 
+    @NotNull
     private String pavadinimas;
 
-    @OneToMany
+    @OneToMany(mappedBy="apygarda", cascade = CascadeType.ALL)
     private List<ApylinkeEntity> apylinkes;
 
     @OneToMany
