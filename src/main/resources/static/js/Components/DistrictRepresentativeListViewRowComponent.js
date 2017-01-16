@@ -1,4 +1,4 @@
-var DistrictRespesentativeListViewRowComponent = React.createClass({
+var DistrictRepresentativeListViewRowComponent = React.createClass({
 
   render: function() {
     return (
@@ -18,4 +18,4 @@ var DistrictRespesentativeListViewRowComponent = React.createClass({
 
 });
 
-window.DistrictRespesentativeListViewRowComponent = DistrictRespesentativeListViewRowComponent;
+window.DistrictRepresentativeListViewRowComponent = DistrictRepresentativeListViewRowComponent;

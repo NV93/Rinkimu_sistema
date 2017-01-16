@@ -1,4 +1,4 @@
-var DistrictRespesentativeComponent = React.createClass({
+var DistrictRepresentativeComponent = React.createClass({
 
   render: function() {
     return (
@@ -7,25 +7,24 @@ var DistrictRespesentativeComponent = React.createClass({
           <div className="panel-body">
           </div>
             <table className="table table-striped">
-            <thead>
-            <tr>
-              <th>
-                Vardas
-              </th>
-              <th>
-                Pavarde
-              </th>
-              <th>
-                Atstovas
-              </th>
-            </tr>
-            </thead>
-            <tbody>
-            <DistrictRespesentativeListViewRowComponent name="Jonas"/>
-            <DistrictRespesentativeListViewRowComponent name="Petras"/>
-            <DistrictRespesentativeListViewRowComponent name="As"/>
-            </tbody>
-
+              <thead>
+                <tr>
+                  <th>
+                    Vardas
+                  </th>
+                  <th>
+                    Pavarde
+                  </th>
+                  <th>
+                    Atstovas
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <DistrictRepresentativeListViewRowComponent name="Jonas"/>
+                <DistrictRepresentativeListViewRowComponent name="Petras"/>
+                <DistrictRepresentativeListViewRowComponent name="As"/>
+              </tbody>
             </table>
         </div>
     );
@@ -33,4 +32,4 @@ var DistrictRespesentativeComponent = React.createClass({
 
 });
 
-window.DistrictRespesentativeComponent = DistrictRespesentativeComponent;
+window.DistrictRepresentativeComponent = DistrictRepresentativeComponent;
