@@ -1,29 +1,29 @@
-package lt.itakademija.electors.apygarda;
+package lt.itakademija.electors.county;
 
-import lt.itakademija.electors.ApylinkeEntity;
+import lt.itakademija.electors.district.DistrictEntity;
 import lt.itakademija.electors.kandidatas.KandidatasEntity;
 import lt.itakademija.electors.partija.PartijaEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
  * Created by Pavel on 2017-01-12.
  */
 @Entity
-public class ApygardaEntity {
+public class CountyEntity {
 
     @Id
     @GeneratedValue
+    @Column(name = "COUNTY_ID")
     private Long id;
 
-    private String pavadinimas;
+    @NotNull
+    private String name;
 
-    @OneToMany
-    private List<ApylinkeEntity> apylinkes;
+    @OneToMany(mappedBy="county", cascade = CascadeType.ALL)
+    private List<DistrictEntity> districts;
 
     @OneToMany
     private List<KandidatasEntity> kandidatai;
@@ -47,20 +47,20 @@ public class ApygardaEntity {
         this.partijos = partijos;
     }
 
-    public String getPavadinimas() {
-        return pavadinimas;
+    public String getName() {
+        return name;
     }
 
-    public void setPavadinimas(String pavadinimas) {
-        this.pavadinimas = pavadinimas;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public List<ApylinkeEntity> getApylinkes() {
-        return apylinkes;
+    public List<DistrictEntity> getDistricts() {
+        return districts;
     }
 
-    public void setApylinkes(List<ApylinkeEntity> apylinkes) {
-        this.apylinkes = apylinkes;
+    public void setDistricts(List<DistrictEntity> districts) {
+        this.districts = districts;
     }
 
     public List<KandidatasEntity> getKandidatai() {

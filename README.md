@@ -19,7 +19,7 @@ Rinkimų naktį, kiekviena apylinkė gali registruoti suskaičiuotus balsus. Vis
 
 
 1.  Sistemoje egzistuoja administratoriaus rolė.
-2.  Sistemoje galima registruoti rinkimines apygardas, jų apylinkes ir kandidatų sąrašus. (Žr. Apygardos duomenų modelis, FR2. Rinkimų duomenų registracija)
+2.  Sistemoje galima registruoti rinkimines apygardas, jų districts ir kandidatų sąrašus. (Žr. Apygardos duomenų modelis, FR2. Rinkimų duomenų registracija)
 3.  Administratorius sistemoje gali registruoti apylinkės atstovus įgaliotus sistemoje paskelbti apylinkės balsų skaičiavimo rezultatus.
 4.  Įgalioti atstovai gali paskelbti apylinkės balsų skaičiavimo rezultatus (balsų skaičių už kiekvieną sąrašą, kandidatą bei sugadintus biuletenius).
 5.  Sistema gali pateikti rinkiminių apylinkių rezultatus. Pateikiami vienmandatės ir daugiamandatės rezultatai (Žr. FR5. Rinkiminių apylinkių rezultatai).
