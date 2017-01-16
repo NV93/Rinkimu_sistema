@@ -4,6 +4,9 @@ var DistrictRepresentativeListViewRowComponent = React.createClass({
     return (
             <tr>
               <td>
+                {this.props.nr}
+              </td>
+              <td>
                 {this.props.name}
               </td>
               <td>
@@ -11,6 +14,10 @@ var DistrictRepresentativeListViewRowComponent = React.createClass({
               </td>
               <td>
                 Zirmunu Apylinke
+              </td>
+              <td>
+                <button type="button" className="btn btn-primary btn-sm">Naujinti</button>
+                <button type="button" className="btn btn-danger btn-sm">Trinti</button>
               </td>
             </tr>
     );

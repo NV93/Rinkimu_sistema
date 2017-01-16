@@ -3,6 +3,7 @@ var App = React.createClass({
   render: function() {
     return (
       <div style={{ paddingTop: '20px' }}>
+        <div>
         <nav className="navbar navbar-default">
           <div className="container-fluid">
               <ul className="nav navbar-nav">
@@ -12,7 +13,10 @@ var App = React.createClass({
               </ul>
           </div>
         </nav>
+        </div>
+        <div>
         {this.props.children}
+        </div>
       </div>
     );
   }
@@ -28,6 +32,7 @@ var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
+
 
 ReactDOM.render((
   <Router history={hashHistory}>
