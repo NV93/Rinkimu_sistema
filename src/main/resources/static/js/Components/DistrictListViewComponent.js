@@ -25,6 +25,7 @@ var DistrictListViewComponent = React.createClass({
             </thead>
             <tbody>
 			  <DistrictListViewRowComponent name="Senamiestis" county="Pilies" representative="M. Šilkienė"/>
+			  <DistrictListViewRowComponent name="Senamiestis" county="Sodų" representative="J. Jonaitis"/>
             </tbody>
           </table>
         </div>

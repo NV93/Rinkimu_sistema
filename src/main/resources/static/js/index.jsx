@@ -10,6 +10,7 @@ var App = React.createClass({
                 <li><a href="#/login">Login<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/rep">Apylinkių atstovai<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/dist">Apylinkės<span className="sr-only">(current)</span></a></li>
+                <li><a href="#/create">Apylinkės redagavimas<span className="sr-only">(current)</span></a></li>
               </ul>
           </div>
         </nav>
@@ -38,6 +39,7 @@ ReactDOM.render((
       <Route path="/login" component={LoginContainer} />
       <Route path="/rep" component={DistrictRespesentativeComponent} />
       <Route path="dist" component={DistrictListViewComponent} />
+      <Route path="create" component={DistrictCreateEditComponent} />
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>
