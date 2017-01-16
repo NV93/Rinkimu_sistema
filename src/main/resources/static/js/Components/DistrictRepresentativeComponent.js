@@ -3,7 +3,7 @@ var DistrictRespesentativeComponent = React.createClass({
   render: function() {
     return (
       <div className="panel panel-default">
-        <div className="panel-heading"><h2>Apylinkės Atstovas</h2></div>
+        <div className="panel-heading"><h2>Apylinkių atstovų sąrašas</h2></div>
           <div className="panel-body">
           </div>
             <table className="table table-striped">
@@ -21,9 +21,9 @@ var DistrictRespesentativeComponent = React.createClass({
             </tr>
             </thead>
             <tbody>
-            <DistrictRespesentativeListViewRowComponent name="Jonas"/>
-            <DistrictRespesentativeListViewRowComponent name="Petras"/>
-            <DistrictRespesentativeListViewRowComponent name="As"/>
+            <DistrictRespesentativeListViewRowComponent name="Jonas" surname="Jonaitis" district="Žirmūnai"/>
+            <DistrictRespesentativeListViewRowComponent name="Petras" surname="Petraitis" district="Antakalnis"/>
+            <DistrictRespesentativeListViewRowComponent name="As" surname="Antanaitis" district="Senamiestis"/>
             </tbody>
 
             </table>

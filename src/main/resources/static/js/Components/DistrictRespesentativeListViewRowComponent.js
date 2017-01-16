@@ -7,10 +7,10 @@ var DistrictRespesentativeListViewRowComponent = React.createClass({
                 {this.props.name}
               </td>
               <td>
-                Petravicius
+                {this.props.surname}
               </td>
               <td>
-                Zirmunu Apylinke
+                {this.props.district}
               </td>
             </tr>
     );
