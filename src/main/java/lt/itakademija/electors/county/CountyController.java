@@ -1,4 +1,4 @@
-package lt.itakademija.electors.apylinke;
+package lt.itakademija.electors.county;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,18 +12,21 @@ import java.util.List;
  * Created by Pavel on 2017-01-14.
  */
 @RestController
-public class ApylinkeController {
+public class CountyController {
 
     @Autowired
-    ApylinkeService service;
+    CountyService service;
 
-    @GetMapping("/apylinke")
-    public List getApylinkeList(){
-        return service.getApylinkeList();
+    @GetMapping("/county")
+    public List getApygardaList(){
+        return service.getAll();
     }
 
-    @PostMapping("/apylinke")
-    public ApylinkeEntity save(@RequestBody ApylinkeEntity apylinke){
-        return service.save(apylinke);
+    @PostMapping("/county")
+    public CountyEntity save(@RequestBody CountyEntity apygarda){
+        return service.save(apygarda);
     }
+
+
+
 }

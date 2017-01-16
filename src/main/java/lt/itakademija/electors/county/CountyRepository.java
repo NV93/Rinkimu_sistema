@@ -1,4 +1,4 @@
-package lt.itakademija.electors.apygarda;
+package lt.itakademija.electors.county;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -9,19 +9,19 @@ import java.util.List;
  * Created by Pavel on 2017-01-12.
  */
 @Repository
-public class ApygardaRepository {
+public class CountyRepository {
 
     @Autowired
     EntityManager em;
 
     public List findAll() {
         List list = em
-                .createQuery("SELECT a FROM ApygardaEntity a")
+                .createQuery("SELECT a FROM CountyEntity a")
                 .getResultList();
         return list;
     }
 
-    public ApygardaEntity save(ApygardaEntity apygarda) {
+    public CountyEntity save(CountyEntity apygarda) {
         if (apygarda.getId() == null) {
             em.persist(apygarda);
         }

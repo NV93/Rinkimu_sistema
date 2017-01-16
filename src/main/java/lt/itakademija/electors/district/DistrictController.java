@@ -1,4 +1,4 @@
-package lt.itakademija.electors.apygarda;
+package lt.itakademija.electors.district;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,21 +12,18 @@ import java.util.List;
  * Created by Pavel on 2017-01-14.
  */
 @RestController
-public class ApygardaController {
+public class DistrictController {
 
     @Autowired
-    ApygardaService service;
+    DistrictService service;
 
-    @GetMapping("/apygarda")
-    public List getApygardaList(){
-        return service.getApygardaList();
+    @GetMapping("/district")
+    public List getDistrictsList(){
+        return service.getDistrictsList();
     }
 
-    @PostMapping("/apygarda")
-    public ApygardaEntity save(@RequestBody ApygardaEntity apygarda){
-        return service.save(apygarda);
+    @PostMapping("/district")
+    public DistrictEntity save(@RequestBody DistrictEntity district){
+        return service.save(district);
     }
-
-
-
 }

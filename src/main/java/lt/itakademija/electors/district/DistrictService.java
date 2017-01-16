@@ -1,4 +1,4 @@
-package lt.itakademija.electors.apylinke;
+package lt.itakademija.electors.district;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,16 +9,16 @@ import java.util.List;
  * Created by Pavel on 2017-01-14.
  */
 @Service
-public class ApylinkeService {
+public class DistrictService {
 
     @Autowired
-    ApylinkeRepository repository;
+    DistrictRepository repository;
 
-    public List getApylinkeList() {
+    public List getDistrictsList() {
         return repository.findAll();
     }
 
-    public ApylinkeEntity save(ApylinkeEntity apylinke) {
+    public DistrictEntity save(DistrictEntity apylinke) {
         return repository.save(apylinke);
     }
 }
