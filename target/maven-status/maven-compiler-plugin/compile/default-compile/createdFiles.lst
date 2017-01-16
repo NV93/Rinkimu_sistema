@@ -1,4 +1,5 @@
 lt\itakademija\users\UserAuthentification.class
+lt\itakademija\electors\representative\DistrictRepresentativeEntity.class
 lt\itakademija\Application.class
 lt\itakademija\users\UsersRepository.class
 lt\itakademija\users\UsersEntity.class

@@ -8,6 +8,7 @@ var App = React.createClass({
               <ul className="nav navbar-nav">
                 <li><a href="#/">Home<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/login">Login<span className="sr-only">(current)</span></a></li>
+                <li><a href="#/rep">Representavie<span className="sr-only">(current)</span></a></li>
               </ul>
           </div>
         </nav>
@@ -34,6 +35,7 @@ ReactDOM.render((
       <IndexRoute component={HomeComponent} />
       <Route path="/create" component={CreateBookContainer} />
       <Route path="/login" component={LoginContainer} />
+      <Route path="/rep" component={DistrictRespesentativeComponent} />
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>
