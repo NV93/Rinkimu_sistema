@@ -41,10 +41,10 @@ ReactDOM.render((
       <IndexRoute component={HomeComponent} />
       <Route path="/create" component={CreateBookContainer} />
       <Route path="/login" component={LoginContainer} />
-      <Route path="/rep" component={DistrictRepresentativeComponent} />
+      <Route path="/rep" component={DistrictRepresentativeListViewComponent} />
       <Route path="/rep/createRep" component={DistrictRepresentativeCreateFormComponent} />
-      <Route path="/county" component={CountyComponent} />
-      <Route path="/county/createRep" component={CountyListRowComponent} />
+      <Route path="/county" component={CountyListViewComponent} />
+      <Route path="/county/createRep" component={CountyCreateFormComponent} />
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>

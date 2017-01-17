@@ -1,5 +1,5 @@
 
-var CountyComponent = React.createClass({
+var CountyListViewComponent = React.createClass({
 
   render: function() {
     return (
@@ -28,9 +28,9 @@ var CountyComponent = React.createClass({
                 </tr>
               </thead>
               <tbody>
-                <CountyListRowComponent name="Vilnius" nr="1"/>
-                <CountyListRowComponent name="Kaunas" nr="2"/>
-                <CountyListRowComponent name="Centras" nr="3"/>
+                <CountyListRowViewComponent countyName="Vilnius" nr="1"/>
+                <CountyListRowViewComponent countyName="Kaunas" nr="2"/>
+                <CountyListRowViewComponent countyName="Centras" nr="3"/>
               </tbody>
             </table>
         </div>
@@ -39,4 +39,4 @@ var CountyComponent = React.createClass({
 
 });
 
-window.CountyComponent = CountyComponent;
+window.CountyListViewComponent = CountyListViewComponent;

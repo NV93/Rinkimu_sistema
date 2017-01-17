@@ -1,4 +1,4 @@
-var DistrictRepresentativeComponent = React.createClass({
+var DistrictRepresentativeListViewComponent = React.createClass({
 
   render: function() {
     return (
@@ -44,4 +44,4 @@ var DistrictRepresentativeComponent = React.createClass({
 
 });
 
-window.DistrictRepresentativeComponent = DistrictRepresentativeComponent;
+window.DistrictRepresentativeListViewComponent = DistrictRepresentativeListViewComponent;
