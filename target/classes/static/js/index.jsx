@@ -9,7 +9,7 @@ var App = React.createClass({
               <ul className="nav navbar-nav">
                 <li><a href="#/">Home<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/login">Login<span className="sr-only">(current)</span></a></li>
-                <li><a href="#/rep">Representave<span className="sr-only">(current)</span></a></li>
+                <li><a href="#/rep">Representative<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/county">County<span className="sr-only">(current)</span></a></li>
               </ul>
           </div>
@@ -44,7 +44,7 @@ ReactDOM.render((
       <Route path="/rep" component={DistrictRepresentativeListViewComponent} />
       <Route path="/rep/createRep" component={DistrictRepresentativeCreateFormComponent} />
       <Route path="/county" component={CountyListViewComponent} />
-      <Route path="/county/createRep" component={CountyCreateFormComponent} />
+      <Route path="/county/createCounty" component={CountyCreateEditFormComponent} />
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>
