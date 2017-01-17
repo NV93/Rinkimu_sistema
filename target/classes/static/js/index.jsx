@@ -10,6 +10,7 @@ var App = React.createClass({
                 <li><a href="#/">Home<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/login">Login<span className="sr-only">(current)</span></a></li>
                 <li><a href="#/rep">Representave<span className="sr-only">(current)</span></a></li>
+                <li><a href="#/county">County<span className="sr-only">(current)</span></a></li>
               </ul>
           </div>
         </nav>
@@ -42,6 +43,8 @@ ReactDOM.render((
       <Route path="/login" component={LoginContainer} />
       <Route path="/rep" component={DistrictRepresentativeComponent} />
       <Route path="/rep/createRep" component={DistrictRepresentativeCreateFormComponent} />
+      <Route path="/county" component={CountyComponent} />
+      <Route path="/county/createRep" component={CountyListRowComponent} />
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>
