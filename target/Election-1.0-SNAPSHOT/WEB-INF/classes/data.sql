@@ -1,1 +1,0 @@
-insert into users (id, username, password) values (null, 'admin', 'superU');
