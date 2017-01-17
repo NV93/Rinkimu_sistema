@@ -1,4 +1,4 @@
-var DistrictListViewRowComponent = React.createClass({
+var CandidatesListViewRowComponent = React.createClass({
 
   render: function() {
     return (
@@ -10,10 +10,10 @@ var DistrictListViewRowComponent = React.createClass({
                 {this.props.name}
               </td>
               <td>
-                {this.props.county}
+                {this.props.surname}
               </td>
               <td>
-                {this.props.representative}
+                {this.props.party}
               </td>
               <td>
                 <div>
@@ -30,4 +30,4 @@ var DistrictListViewRowComponent = React.createClass({
   }
 });
 
-window.DistrictListViewRowComponent = DistrictListViewRowComponent;
+window.CandidatesListViewRowComponent = CandidatesListViewRowComponent;
